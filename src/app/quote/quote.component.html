@@ -8,4 +8,9 @@
               <i>"{{quote.quoting}}"</i> <br><br><span class="text-center">&mdash; {{quote.author}}</span>
             </h5>
             <app-quote-details [quote]='quote' (isDelete)='quoteDelete($event,i)' (vote)='voteAdd($event,i)'></app-quote-details>
-    
+          </div>
+        </div>
+      </div>
+    </div>
+  <div class="col-md-4">
+    <app-quote-form (addQuote)="postNewQuote($event)"></app-quote-form>
