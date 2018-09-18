@@ -7,3 +7,5 @@
             <h5>
               <i>"{{quote.quoting}}"</i> <br><br><span class="text-center">&mdash; {{quote.author}}</span>
             </h5>
+            <app-quote-details [quote]='quote' (isDelete)='quoteDelete($event,i)' (vote)='voteAdd($event,i)'></app-quote-details>
+    
